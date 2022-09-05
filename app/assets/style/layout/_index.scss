@@ -1,0 +1,41 @@
+//nav
+nav {
+    position: fixed;
+    min-width: 296px;
+    min-height: 100vh;
+    .profile {
+        padding: 12px 32px;
+        margin-bottom: 32px;
+        color: $gray-900;
+    }
+}
+
+.nav-link {
+    padding: 12px 32px;
+    &.active {
+        color: $nav-link-active-color;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 4px;
+            height: 32px;
+            border-left: 4px solid #198754;
+        }
+    }
+}
+
+//main
+main {
+    margin-left: 296px;
+}
+
+.page-header {
+  padding: $spacer * 2;
+    h1{
+      font-size: $font-size-lg;
+      font-weight: $font-weight-bold;
+      color: $gray-900;
+      margin-bottom: 0;
+    }
+}
